@@ -29,18 +29,20 @@ require_once WWW_ROOT . 'dao' . DS . 'ProductDAO.php';
 	}
 
 	public function index(){
+		
+		$subtotal = 0;
 
 		if(isset($_SESSION['shoppingcart'])){
 
 			$shoppingcart = $_SESSION["shoppingcart"];
+			$products = [];
 
-			foreach($shoppingcart as $product){
-				$winkelwagen[] = $this->productDAO->selectById($product);
-				$subtotal = 0;
-				
+			foreach($shoppingcart as $productId){
+				$product = $this->productDAO->selectById($productId);
+				$products[] = $product;
+				$subtotal += $product['price'];
 			}
-			$this->set('shoppingcart',$winkelwagen);
-			$subtotal += $product['price'];
+			$this->set('products', $products);
 
 		}
 		$this->set('subtotal', $subtotal);
