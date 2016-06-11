@@ -1,0 +1,333 @@
+/*-------------
+	ALGEMEEN
+--------------*/
+
+html {
+box-sizing: border-box;
+}
+
+*,*::before, *:after{
+box-sizing: inherit;
+}
+
+body{
+	background-image: url("../assets/images/pattern.png");
+	display:flex;
+	font-family: "RubikR";
+	flex-direction:column;
+	-webkit-flex-direction:column;
+}
+
+
+@font-face {
+font-family: "Amatic";
+font-style: bold;
+/*font-weight: voor bold*/
+src : url(../assets/font/amatic/amatic-bold-webfont.woff) format(woff),
+url(../font/amatic/amatic-bold-webfont.woff2) format(woff2);
+}
+
+/*Rubik*/
+
+@font-face {
+font-family: "RubikR";
+font-style: regular;
+/*font-weight: voor bold*/
+src : url(../assets/font/rubik/rubik-regular-webfont.woff) format(woff),
+url(../font/rubik/rubik-regular-webfont.woff2) format(woff2);
+}
+
+@font-face {
+font-family: "RubikM";
+font-style: medium;
+/*font-weight: voor bold*/
+src : url(../assets/font/rubik/rubik-medium-webfont.woff) format(woff),
+url(../font/rubik/rubik-medium-webfont.woff2) format(woff2);
+}
+
+@font-face {
+font-family: "RubikL";
+font-style: light;
+/*font-weight: voor bold*/
+src : url(../assets/font/rubik/rubik-light-webfont.woff) format(woff),
+url(../font/rubik/rubik-light-webfont.woff2) format(woff2);
+}
+
+@font-face {
+font-family: "RubikLI";
+font-style: italic;
+/*font-weight: voor bold*/
+src : url(../assets/font/rubik/rubik-lightitalic-webfont.woff) format(woff),
+url(../font/rubik/rubik-lightitalic-webfont.woff2) format(woff2);
+}
+
+
+.container{
+	width:960px;
+	margin:auto;
+	display: flex;
+	display: -webkit-flex
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+/*-------------
+	HEADER
+--------------*/
+
+.head{
+	display: flex;
+	display:-webkit-flex;
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+}
+
+.hoofd{
+	width: 100%;
+	border:1px solid red;
+	display:flex;
+	display:-webkit-flex;
+	justify-content: center;
+	-webkit-justify-content:center;
+	background-image: url(../assets/images/wolkje1.png);
+	background-repeat: no-repeat;
+
+}
+
+.container2{
+	display: flex;
+	display: -webkit-flex;
+	
+	
+}
+
+.lijst{
+	display: flex;
+	display:-webkit-flex;
+	-webkit-box-flex:1;
+	flex:1;
+	webkit-justify-content:flex-end;
+	justify-content: flex-end;
+}
+
+.lijst1{
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: column wrap;
+	-webkit-flex-flow: column wrap;
+}
+
+.lijst2{
+	display: flex;
+	display:-webkit-flex;
+	flex-flow: column wrap;
+	-webkit-flex-flow:column wrap;
+}
+
+
+.h1{
+	
+	font-family: "Amatic";
+	font-size: 5.6em;
+	color: #8a322f;
+	width:500px;
+	position: relative;
+    top: -100px;
+    left:-50px;
+
+}
+
+.karishma{
+	background-image: url("../assets/images/karishma.png");
+	background-repeat: no-repeat;
+	height: 100px;
+	width:500px;
+	position: relative;
+    top: 400px;
+    left: 200px;
+    
+
+}
+
+.header_afb{
+	background-image: url("../assets/images/header.png");
+	background-repeat: no-repeat;
+	width:1070px;
+	height:650px;
+	display: flex;
+	display:-webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	position: absolute;
+    right: 20px;
+
+}	
+
+.span{
+	font-family: "Amatic";
+	font-size: 1.28em;
+	color: #8a322f;
+}
+
+.wolk1{
+	/*background-image: url(../images/wolkje1.png);
+	background-repeat: no-repeat;*/
+	height: 950px; 
+	border:1px solid green;
+	width:960px;
+}
+
+/*-------------
+	CONTENT
+--------------*/
+
+.poly1{
+	background-image: url(../assets/images/poly1.png);
+	background-repeat: no-repeat;
+	width:600px;
+	height: 600px;
+	
+}
+
+.inleiding{
+	color: #8a322f;
+	display: flex;
+	display:-webkit-flex;
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+}
+
+.inleiding_text{
+	margin-top: 300px;
+	margin-right: 200px;
+}
+
+
+.kortrijk{
+	color:#8a322f;
+	font-family: "Amatic";
+	font-size:6.0em;
+}
+
+
+.datum_kortrijk{
+	font-family: "RubikL";
+	color: #f2f2f2;
+	font-size:2.5em;
+}
+
+.brussel{
+	color: #52B890;
+	font-family: "Amatic";
+	font-size:6.0em;
+}
+
+.datum_brussel{
+	font-family: "RubikL";
+	color: #3e8970;
+	font-size: 2.5em;
+}
+
+.hasselt{
+	color: #DBB685;
+	font-family: "Amatic";
+	font-size:6.0em;
+}
+
+.datum_hasselt{
+	font-family: "RubikL";
+	color: #d79946;
+	font-size:2.5em;
+}
+
+.wolk2{
+	background-image: url(../assets/images/wolkje2.png);
+	width:845px;
+	height: 675px;
+	background-repeat: no-repeat;
+	margin-top: -290px;
+	margin-left:360px;
+}
+
+.kortrijk_container{
+	margin-top: -250px;
+	margin-left:-230px;
+	display:flex;
+	display:-webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+.brussel_container{
+	display:flex;
+	display:-webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	margin-left: 250px;
+	margin-top: -80px;
+}
+
+.hasselt_container{
+	display:flex;
+	display:-webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	margin-left: -200px;
+	margin-top: -20px;
+}
+
+
+/*-------------
+	TRUCK
+--------------*/
+
+.achtergrond{
+	background-image: url(../assets/images/wolkenachtergrond.png);
+	width: 1366px;
+	height:5366px;
+}
+
+.hoofd2{
+	display: flex;
+	width:960px;
+	justify-content: flex-end;
+
+}
+
+.container_truck{
+	display:flex;
+	display:-webkit-flex;
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
+	flex-direction: column;
+	-webkit-flex-direction:column;
+}
+
+.truck_text{
+	display:flex;
+	display:-webkit-flex;
+	margin:auto;
+	flex-direction: column;
+	align-items: center;
+}
+
+.truck_title{
+	font-family: "Amatic";
+	font-size:7em;
+}
+
+.truck_afb{
+	align-items:center;
+}
+
+
+
+
+
+
